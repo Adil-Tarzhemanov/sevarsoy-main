@@ -1,0 +1,53 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 2032px;
+    margin: 49px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(#98BDE2, 0.2);
+    border-radius: 20px;
+
+
+    .rangeDatePicker {
+        padding-top: 33px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        gap: 25px;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .numbers {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        .rangeDatePicker {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

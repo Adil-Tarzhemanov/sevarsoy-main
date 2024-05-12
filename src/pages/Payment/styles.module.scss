@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+
+    .head {
+        color: #032E5C;
+        font-size: 55px;
+        font-weight: 700;
+        font-family: Montserrat;
+        text-align: center;
+    }
+
+    .backToNumbers {
+        align-self: flex-start;
+        color: #032E5C;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        .backToNumbers {
+            padding-left: 50px;
+        }
+    }
+}
+@media (max-width: 770px) {
+    .container {
+        .head {
+            font-size: 30px;
+        }
+    }
+}

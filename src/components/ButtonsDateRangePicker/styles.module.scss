@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+.arrival {
+    display: flex;
+    align-items: center;
+    width: 181px;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+
+    .customRangePicker {
+        position: absolute;
+        left: 0;
+    }
+
+    .arrivalWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+
+        .calendarImg {
+            width: 18px;
+        }
+
+        .titleAndDate {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .title {
+                color: #032E5C;
+                font-family: Montserrat;
+                font-size: 10px;
+                font-weight: 500;
+            }
+            .date {
+                margin: 0;
+                color: #032E5C;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,74 @@
+.numberData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+
+    .titleAndDelete {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .numberDataTitle {
+            font-size: 12px;
+            font-weight: 500;
+            font-family: Montserrat;
+            color: #032E5C;
+            align-self: flex-start;
+        }
+
+        .deleteBtn {
+            font-size: 16px;
+            cursor: pointer;
+            width: 16px;
+        }
+    }
+
+
+    .humansWrapper {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+
+        .adultsWrapper {
+            .adultsTitle {
+                font-size: 10px;
+                font-weight: 400;
+                font-family: Montserrat;
+                color: #032E5C;
+            }
+
+            .adults {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                border: 1px solid #98BDE2;
+                border-radius: 3px;
+                width: 118px;
+                height: 35px;
+
+                .minus {
+                    font-size: 26px;
+                }
+
+                .plus {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .line {
+        margin-top: 1px;
+        width: 248px;
+        height: 1px;
+        background: #A3A3A3;
+    }
+
+    .numberLine {
+        margin-top: 10px;
+    }
+}

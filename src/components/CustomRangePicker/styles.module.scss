@@ -1,0 +1,25 @@
+.error {
+    position: absolute;
+    top: -135px;
+}
+
+.smallWidthWrapper {
+    display: flex;
+    gap: 10px;
+    max-width: 367px;
+    width: 100%;
+    opacity: 0;
+
+    .customPicker .ant-picker-dropdown {
+        left: 50% !important; /* Сместить календарь на 50% ширины инпута */
+        transform: translateX(-50%); /* Скорректировать смещение на половину ширины календаря */
+    }
+}
+
+@media (max-width: 400px) {
+    .smallWidthWrapper {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 50px;
+    }
+}

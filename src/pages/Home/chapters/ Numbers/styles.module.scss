@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto 50px;
+    background: linear-gradient(to bottom, #98BDE2 0%, white 50%) ;
+
+    .titleWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 70px;
+        //width: 100vw;
+        //height: 220px;
+        //background: linear-gradient(rgba(152, 189, 226, 1), rgba(142, 189, 210, 1), white);
+
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .number {
+            position: relative;
+            overflow: hidden;
+            min-width: 360px;
+            max-height: 650px;
+
+            .numberImg {
+                max-width: 400px;
+                width: 100%;
+                -moz-transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+                filter: brightness(60%);
+
+                &:hover {
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    filter: brightness(100%);
+                }
+            }
+
+            .numberDataWrapper {
+                position: absolute;
+                bottom: 41px;
+                left: 46px;
+
+                .title {
+                    height: 37px;
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+
+                .price {
+                    height: 40px;
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 13px;
+                    font-weight: 600;
+
+                    span {
+                        height: 40px;
+                        color: #C8A654;
+                        font-family: Montserrat;
+                        font-size: 32px;
+                        font-weight: 700;
+                    }
+                }
+
+                .description {
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 16px;
+
+                    .bedImg {
+                        display: inline;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        .numbers {
+            min-width: 0;
+            max-width: 360px;
+            flex-wrap: wrap;
+        }
+    }
+}

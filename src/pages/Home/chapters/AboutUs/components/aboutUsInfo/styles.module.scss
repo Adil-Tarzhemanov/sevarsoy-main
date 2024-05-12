@@ -1,0 +1,33 @@
+.info {
+    display: flex;
+    gap: 27px;
+    max-width: 613px;
+    width: 100%;
+    margin-bottom: 33px;
+
+    .img {
+        width: 101px;
+        align-self: flex-start;
+    }
+
+    .titleAndText {
+        margin-top: -15px;
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 14px;
+            color: #032E5C;
+        }
+
+        .text {
+            max-width: 485px;
+            width: 100%;
+            color: #032E5C;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+}
+

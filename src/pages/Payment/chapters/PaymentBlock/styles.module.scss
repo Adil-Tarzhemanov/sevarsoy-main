@@ -1,0 +1,335 @@
+$color: #032E5C;
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 1500px;
+    margin: 49px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(#98BDE2, 0.2);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .reservDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 21px;
+        max-width: 1156px;
+        width: 100%;
+        min-height: 86px;
+        background: white;
+        border-radius: 10px;
+        padding: 0 35px;
+
+        .result {
+            color: #032E5C;
+
+            .resultPrice {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .detailsBtn {
+            background: #98bde2;
+            width: 183px;
+            height: 44px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .contactDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 10px;
+        max-width: 1152px;
+        min-height: 318px;
+        margin-top: 30px;
+        padding: 0 35px;
+
+        .contactData {
+            margin-bottom: 28px;
+            color: #032E5C;
+            font-size: 32px;
+            font-weight: 500;
+            font-family: Montserrat;
+        }
+
+        .inputsData {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 900px;
+
+            .input {
+                height: 40px;
+                width: 280px;
+                border: 2px solid #98bde2;
+                border-radius: 3px;
+                padding-left: 10px;
+            }
+        }
+
+        .clue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 22px;
+            padding: 0 62px;
+            text-align: center;
+            border: 2px solid #98bde2;
+            border-radius: 2px;
+            min-height: 84px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .timeInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 10px;
+        max-width: 1152px;
+        width: 100%;
+        min-height: 118px;
+        margin-top: 30px;
+        padding: 25px 35px;
+
+        .timeTitle {
+            color: $color;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: Montserrat;
+            margin-bottom: 20px;
+        }
+
+        .timeText {
+            color: $color;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Montserrat;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            width: 100%;
+            height: 1.5px;
+            background: gray;
+            opacity: 0.5;
+            margin-bottom: 10px;
+        }
+
+        .extraTitle {
+            color: $color;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: Montserrat;
+            margin-bottom: 10px;
+        }
+
+        .extraComment {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            min-height: 84px;
+            border: 3px solid #98bde2;
+            border-radius: 3px;
+
+            .text {
+                color: #032E5C;
+            }
+
+            .extraTextArea {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                opacity: 0.4;
+                padding: 10px 20px;
+
+                &:focus, :active {
+                    opacity: 1;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .payment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 10px;
+        max-width: 1152px;
+        width: 100%;
+        min-height: 245px;
+        margin-top: 30px;
+        padding: 0 35px;
+
+        .leftPart {
+            .paymentTitle {
+                color: $color;
+                font-size: 24px;
+                font-weight: 600;
+                font-family: Montserrat;
+                margin-bottom: 20px;
+            }
+
+            .agreeWrapper {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                max-width: 900px;
+                margin-bottom: 10px;
+
+                .agreeBtn {
+                    min-width: 36px;
+                    min-height: 36px;
+                    background: #98bde2;
+                    opacity: 0.25;
+                    border: 1px solid #032E5C;
+                }
+
+                .isAgree {
+                    background: green;
+                    opacity: 0.5;
+                }
+            }
+
+            .allSumText {
+                color: #032E5C;
+                margin-bottom: 10px;
+            }
+
+            .paymeText {
+                color: $color;
+            }
+
+        }
+
+        .rightPart {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+
+            .imgs {
+                display: flex;
+                gap: 10px;
+
+                .uzcardImg {
+                    width: 70px;
+                    height: 36px;
+                }
+            }
+
+            .toPayText {
+                color: $color;
+            }
+
+            .resultSum {
+             color: $color;
+            }
+
+          .bookBtn {
+              background: #98bde2;
+              width: 183px;
+              height: 44px;
+              border-radius: 10px;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .link {
+                  text-decoration: none;
+                  color: white;
+              }
+          }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        .reservDetails {
+            padding-top: 20px;
+            flex-direction: column;
+            padding-bottom: 20px;
+
+            .result {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .info {
+                    text-align: center;
+                }
+            }
+        }
+
+        .payment {
+            .leftPart {
+                margin-top: 20px;
+            }
+        }
+
+        .contactDetails {
+            .inputsData {
+                justify-content: center;
+            }
+
+            .clue {
+                padding: 0 5px;
+                justify-content: flex-start;
+                text-align: left;
+                hyphens: auto;
+            }
+        }
+
+        .payment {
+            flex-direction: column;
+
+            .leftPart {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .agreeWrapper {
+                    .agreeText {
+                        hyphens: auto;
+                    }
+                }
+
+                .allSumText {
+                    hyphens: auto;
+                }
+            }
+
+            .rightPart {
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

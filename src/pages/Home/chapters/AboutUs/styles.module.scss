@@ -1,0 +1,99 @@
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 100px auto;
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        gap: 44px;
+
+        .backgroundAndImg {
+            position: relative;
+            //width: 100%;
+
+            .blueBack {
+                position: absolute;
+                top: -100px;
+                right: 50%;
+                z-index: 0;
+                width: 100vw;
+                height: 863px;
+                //height: 100%;
+                background: linear-gradient(to right, #98BDE2, white);
+                background-size: 45% 100%;
+                background-position: 100% 0;
+            }
+
+            .aboutUsImg {
+                position: relative;
+                max-height: 670px;
+                max-width: 100%;  // замените ширину на 100%, если изображение должно заполнять ширину контейнера
+                height: auto;
+                //height: 100%;
+                //width: auto;
+                border-radius: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .infoWrapper {
+            .headWrapper {
+                height: 132px;
+                margin-bottom: 34px;
+                margin-top: -10px;
+
+                .head {
+                    max-width: 450px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #032E5C;
+                    letter-spacing: 3px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1360px) {
+    .container {
+        margin: 50px 0;
+        .content {
+            flex-direction: column;
+            align-items: center;
+
+            .infoWrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .container {
+        .content {
+            .infoWrapper {
+
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        .content {
+            .infoWrapper {
+                .headWrapper {
+                    .head {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

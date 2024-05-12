@@ -1,0 +1,31 @@
+.swiper {
+    width: 350px;
+
+    .mySwiper {
+        .swiperSlide {
+            background-position: center;
+            background-size: cover;
+            max-width: 350px;
+            max-height: 350px;
+
+            .numberImg {
+                display: block;
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 40px; // Устанавливает ширину линии
+            height: 2px; // Устанавливает высоту линии
+            border-radius: 0; // Убирает скругление
+            background: #000; // Цвет линии
+        }
+
+        // Стиль для активного состояния пагинации
+        .swiper-pagination-bullet-active {
+            background: #ff0000; // Цвет активной линии
+        }
+    }
+}

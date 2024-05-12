@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37px;
+
+    .line {
+        width: 70px;
+        height: 5px;
+        background: #032E5C;
+    }
+
+    .numbersTitle {
+        margin-top: 20px;
+        color: #032E5C;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .whiteLine {
+        background: white;
+    }
+
+    .whiteTitle {
+        color: white;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        .numbersTitle {
+            font-size: 22px;
+        }
+    }
+}

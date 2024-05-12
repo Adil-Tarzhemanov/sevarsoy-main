@@ -1,0 +1,87 @@
+.mobileHeader {
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+        background: transparent;
+        position: fixed;
+        z-index: 50;
+
+        & .logo {
+            padding-top: 20px;
+        }
+
+        & .btnWrapper {
+            & .burgerBtn {
+                width: 30px;
+                height: 30px;
+                margin-right: 20px;
+                position: relative;
+                background: transparent;
+                cursor: pointer;
+
+                & span {
+                    position: absolute;
+                    width: 30px;
+                    background: white;
+                    height: 3px;
+                }
+
+                & .span1 {
+                    top: 0;
+                    transition: 0.4s;
+                }
+
+                & .span2 {
+                    top: 14px;
+                    transition: 0.4s;
+                }
+
+                & .span3 {
+                    bottom: 0;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+
+    .location {
+        background: #98bde2;
+    }
+
+    .scrolling {
+        background: #98bde2;
+    }
+
+    & .active {
+        background: white;
+
+        & .btnWrapper {
+            & .burgerBtn {
+                background: white;
+
+                & span {
+                   background: black;
+                }
+
+                & .span1 {
+                    top: 14px;
+                    transform: rotate(135deg);
+                }
+
+                & .span2 {
+                    opacity: 0;
+                    transform: translateX(-60px)
+                }
+
+                & .span3 {
+                    top: 14px;
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+}

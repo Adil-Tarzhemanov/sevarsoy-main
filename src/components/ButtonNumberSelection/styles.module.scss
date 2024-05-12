@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 181px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 181px;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+
+    .quantityWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+
+        .calendarImg {
+            width: 18px;
+        }
+
+        .titleAndQuantity {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .title {
+                color: #032E5C;
+                font-family: Montserrat;
+                font-size: 10px;
+                font-weight: 500;
+            }
+            .adultsAndChildren {
+                margin: 0;
+                color: #032E5C;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
