@@ -63,7 +63,7 @@ const Main: FC = () => {
   if (isError) return <div>Error fetching data</div>;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="home">
       <video autoPlay muted loop playsInline className={styles.videoBackground}>
         <source src="assets/home/mainVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.

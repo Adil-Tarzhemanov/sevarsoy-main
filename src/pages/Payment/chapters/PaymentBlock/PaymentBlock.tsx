@@ -54,6 +54,8 @@ const PaymentBlock: FC = () => {
 
   const baseString = `m=662fefa6d8b2a6cf1b679f96;ac.code=${data.code};a=${data.totalPrice}`;
 
+  console.log(data);
+
   return (
     <div className={styles.container}>
       <div className={styles.reservDetails}>
