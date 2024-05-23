@@ -4,7 +4,7 @@ import "dayjs/locale/ru";
 import Main from "./chapters/Main/Main";
 import AboutUs from "./chapters/AboutUs/AboutUs";
 import Classes from "./chapters/Classes/Classes";
-import Numbers from "./chapters/ Numbers/Numbers";
+import Numbers from "./chapters/Numbers/Numbers";
 import News from "./chapters/News/News";
 import Footer from "./chapters/Footer/Footer";
 

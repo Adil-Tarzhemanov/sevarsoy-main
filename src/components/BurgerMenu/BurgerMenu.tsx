@@ -3,22 +3,27 @@ import { FC, useEffect, useState } from "react";
 import Menu from "../Menu/Menu";
 import classNames from "classnames";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
+
+
+
 
 const BurgerMenu: FC = () => {
   const [menuActive, setMenuActive] = useState(false);
-
+  const { t, i18n } = useTranslation();
   const items: any = [
     {
       to: "aboutUs",
-      value: "О нас",
+      value: t("about"),
     },
     {
       to: "classes",
-      value: "Чем заняться",
+      value: t("doing"),
     },
     {
       to: "numbers",
-      value: "Номера",
+      value: t("numbers"),
     },
     {
       to: "news",

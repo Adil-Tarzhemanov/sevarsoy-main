@@ -8,6 +8,7 @@ import { useGuestsInfoByMutation } from "../../../../api/queries/rooms/lastStep.
 import { useWindowSize } from "../../../../hooks/windowSize";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import {useForm} from "react-hook-form";
 
 export interface GuestInput {
   name: string;
@@ -54,6 +55,8 @@ const PaymentBlock: FC = () => {
 
   const baseString = `m=662fefa6d8b2a6cf1b679f96;ac.code=${data.code};a=${data.totalPrice}`;
 
+  const {register} = useForm()
+
   console.log(data);
 
   return (
@@ -62,7 +65,8 @@ const PaymentBlock: FC = () => {
         <div className={styles.result}>
           <h4 className={styles.info}>
             {dateMonthFormatted(data.dates[0])} -{" "}
-            {dateMonthFormatted(data.dates[1])},{windowSize < 430 && <br />}
+            {dateMonthFormatted(data.dates[1])},
+              {/*{windowSize < 430 && <br />}*/}
             {data.numbers.length} {data.numbers.length < 2 ? "номер" : "номера"}
             , {allGuest(data.numbers)}{" "}
             {allGuest(data.numbers).length < 2
@@ -82,9 +86,9 @@ const PaymentBlock: FC = () => {
       <div className={styles.contactDetails}>
         <h2 className={styles.contactData}>Контактные данные</h2>
         <div className={styles.inputsData}>
-          {/*{[1, 2, 3, 4, 5].map((input) => (*/}
           <input
             className={styles.input}
+            {...register("name", {required: true})}
             value={nameInput}
             onChange={(e) => setNameInput(e.target.value)}
             placeholder="Имя"

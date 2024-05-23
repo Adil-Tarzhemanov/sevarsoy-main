@@ -278,11 +278,32 @@ $color: #032E5C;
             .result {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                margin-left: -50px;
+                //align-items: center;
 
                 .info {
                     text-align: center;
+                    font-size: 14px;
                 }
+
+                .resultPrice {
+                    display: flex;
+
+                    .title {
+                        font-size: 15px;
+                    }
+
+                    .price {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .detailsBtn {
+                width: 105px;
+                height: 24px;
+                font-size: 10px;
+                margin-right: -180px;
             }
         }
 
@@ -293,6 +314,10 @@ $color: #032E5C;
         }
 
         .contactDetails {
+            .contactData {
+                margin-top: 10px;
+                font-size: 18px;
+            }
             .inputsData {
                 justify-content: center;
             }

@@ -30,5 +30,5 @@ export const resultSum = (numbers: any, numbersInfo: any, dates: any) => {
   const deluxeSum = deluxeCount * numbersInfo.data[1].price * daysDifference;
   const luxeSum = luxeCount * numbersInfo.data[2].price * daysDifference;
 
-  return matressesSum + nutritionSum + standartSum + deluxeSum + luxeSum;
+  return (matressesSum + nutritionSum + standartSum + deluxeSum + luxeSum)*100;
 };

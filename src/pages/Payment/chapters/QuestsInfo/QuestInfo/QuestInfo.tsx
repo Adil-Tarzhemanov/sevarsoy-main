@@ -56,7 +56,7 @@ const QuestInfo: FC<QuestInfoProps> = ({
       className={classNames(styles.guestInfo, { [styles.another]: !firstInfo })}
     >
       {firstInfo && (
-        <h2 className={styles.guestInfoTitle}>Информация о гостях</h2>
+        <h2 className={styles.guestInfoTitle}>Информация о гостях <span className={styles.span}>(не обязательно)</span></h2>
       )}
       <h4 className={styles.numberInfo}>
         Номер {index}: {type.toUpperCase()}, {windowSize < 680 && <br />}

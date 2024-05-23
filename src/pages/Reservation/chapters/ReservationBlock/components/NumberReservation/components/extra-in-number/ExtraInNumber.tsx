@@ -58,7 +58,7 @@ const ExtraInNumber: FC<any> = ({ index }) => {
         onClick={() => setIsMattresses(true)}
       >
         <h3 className={styles.extraTitle}>
-          Дополнительный <br /> матрас
+          Детская <br /> оплата
         </h3>
         {isMattresses && (
           <div className={styles.extraCountWrapper}>

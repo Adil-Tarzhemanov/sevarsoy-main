@@ -17,6 +17,14 @@
         font-size: 32px;
         font-weight: 500;
         font-family: Montserrat;
+
+        .span {
+            font-size: 20px;
+
+            @media (max-width: 420px) {
+                display: inline-block;
+            }
+        }
     }
 
     .numberInfo {
@@ -65,6 +73,7 @@
     .guestInfo {
         .guestInfoTitle {
             text-align: center;
+            font-size: 18px;
         }
         .numberInfo {
             text-align: center;
